@@ -1,24 +1,28 @@
-
 .nav {
   display: flex;
   justify-content: center;
   gap: 20px;
   background-color: #0070f3;
   padding: 12px;
-  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .link {
   color: white;
-  text-decoration: none;
+  width: 150px;
+  height: 35px;
   font-size: 18px;
   font-weight: bold;
-  transition: color 0.3s ease-in-out;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .link:hover {
-  background-color: aliceblue;
+  background-color: white;
   color: #0070f3;
-  height: auto;
-  width: auto;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
 }
