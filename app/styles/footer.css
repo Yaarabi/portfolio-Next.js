@@ -1,0 +1,37 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #18181b 0%, #23272f 100%);
+    color: #e0e6ed;
+    padding: 18px 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 -2px 16px 0 rgba(0,0,0,0.25);
+    animation: footerFadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 10;
+}
+
+@keyframes footerFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer a {
+    color: #60a5fa;
+    text-decoration: none;
+    margin-left: 8px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #38bdf8;
+}

@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+/* Smooth fade-in animation for the whole page */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  animation: bodyFadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes bodyFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
